@@ -1,5 +1,4 @@
 
-# 1:Site Clones
-TODO: 1. Recreate the front-end of popular websites
-      2. Have fun
+# Site Clones
+TODO: * Recreate the front-end of popular websites * Have fun
 ## Thanks for checking out my profile!
