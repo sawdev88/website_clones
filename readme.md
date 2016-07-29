@@ -1,9 +1,5 @@
 
-<snippet>
-  <content><![CDATA[
-# ${1:Site Clones}
-TODO: Recreating the front-end of popular websites.
+# 1:Site Clones
+TODO: 1. Recreate the front-end of popular websites
+      2. Have fun
 ## Thanks for checking out my profile!
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
