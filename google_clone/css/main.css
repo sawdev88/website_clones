@@ -283,4 +283,8 @@ footer a:hover {
     color: #787878;
   }
 
+  .thToolTip {
+    right: 2px;
+  }
+
 }
