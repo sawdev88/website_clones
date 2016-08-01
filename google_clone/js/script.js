@@ -1,5 +1,4 @@
-var showBoarder = false,
-    windowWidth = $(window).width();
+var windowWidth = $(window).width();
 
 $(document).ready(function() {
 
@@ -19,7 +18,6 @@ $(document).ready(function() {
 
 // Show blue outline around search bar
   $('.search input').on('click', function(){
-      showBoarder = false;
       $('.search').addClass('search-border');
       console.log(showBoarder);
   })
