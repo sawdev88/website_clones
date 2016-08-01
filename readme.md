@@ -1,6 +1,6 @@
 
 # Site Clones
-## No DEV TOOLS!!
+## No DevTools!!
 TODO:
 
       1. Recreate the front-end of popular websites

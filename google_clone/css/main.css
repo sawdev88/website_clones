@@ -1,3 +1,8 @@
+body, html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
 header {
   margin-top: 16px;
   padding-right: 18px;
@@ -16,6 +21,7 @@ li {
 header a {
   font-size: 13px;
   color: #666;
+  font-weight: lighter;
 }
 
 header a:hover {
@@ -26,12 +32,12 @@ header a:hover {
   font-size: 18px;
   vertical-align: middle;
   padding-bottom: 4px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .bell {
   font-size: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 50%;
   color: #fff;
@@ -51,19 +57,23 @@ header img {
   border-radius: 50%;
 }
 
+.top-menu-mobile {
+  display: none;
+}
+
 main {
   text-align: center;
   clear: both;
 }
 
 .logo {
-  padding-top: 140px;
+  padding-top: 150px;
 }
 
 .search {
   overflow: scroll;
   clear: both;
-  margin: 32px auto 32px;
+  margin: 30px auto 32px;
   height: 40px;
   width: 35%;
   border: 1px solid #ccc;
@@ -83,14 +93,18 @@ main {
   outline: none;
 }
 
-.search img {
+.search-img-mic {
   float: right;
   margin: 8px 8px 0;
   height: 25px;
   width: 25px;
 }
 
-main button {
+.search-microscope {
+  display: none;
+}
+
+.search-buttons button {
   border: none;
   padding: 8px 16px;
   margin: 0 2px;
@@ -101,7 +115,7 @@ main button {
   border: 1px solid #f2f2f2;
 }
 
-main button:hover {
+.search-buttons button:hover {
   border: 1px solid #c6c6c6;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   color: #222;
@@ -112,7 +126,7 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  background: #eee;
+  background: rgb(242, 242, 242);
   height: 40px;
   border-top: 1px solid #ddd;
   padding-top: 10px;
@@ -128,10 +142,137 @@ footer a {
   padding: 0 8px;
 }
 
-.footer_left {
+.footer-location {
+  display: none;
+}
+
+.footer-left {
+  float: left;
   padding-left: 16px;
 }
 
-.footer_right {
+.footer-right {
+  float: right;
   padding-right: 16px;
+  text-align: right;
+}
+
+/*TOOLTIPS*/
+
+.thToolTip {
+  display: none;
+  position: absolute;
+  top: 54px;
+  right: 14px;
+}
+
+.bellToolTip {
+  display: none;
+  position: absolute;
+  top: 54px;
+  right: 22px;
+}
+
+@media (max-width: 480px) {
+  header {
+    margin-top: 0;
+    padding-right: 4px;
+  }
+
+  .top-menu-desktop {
+    display: none;
+  }
+
+  .top-menu-mobile {
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-left: -30px;
+    display: block;
+  }
+
+  .top-menu-mobile a {
+    font-weight: bold;
+    color: #777;
+    font-size: .9em;
+  }
+
+  a.selected-mobile {
+    color: #4d90fe;
+    border-bottom: 2px solid #4d90fe;
+    padding: 0 8px 16px;
+  }
+
+  .logo {
+    padding-top: 80px;
+  }
+
+  img.logo {
+    max-width: 42%;
+  }
+
+  .search {
+    width: 95%;
+    margin-top: 24px;
+  }
+
+  .search-img-mic {
+    display: none;
+  }
+
+  .search input {
+    width: 85%;
+  }
+
+  .search-microscope {
+    display: inline;
+    float: right;
+    background: #4d90fe;
+    margin-right: -2px;
+  }
+
+  .search-microscope span {
+    color: #fff;
+    margin-top: 4px;
+    padding: 8px 12px 16px;
+    font-size: 14px;
+  }
+
+  .search-buttons {
+    display: none;
+  }
+
+  footer {
+    position: absolute;
+    height: 145px;
+    text-align: center;
+    margin-bottom: -90px;
+  }
+
+  .footer-location {
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 8px 0;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .location-status-dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #999;
+    content: "";
+  }
+
+  footer ul {
+    margin-top: 18px;
+  }
+
+  footer a {
+    color: #787878;
+  }
+
 }
