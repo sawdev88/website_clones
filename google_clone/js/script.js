@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('.thToolTip').show();
   })
 
-// Show bell Tooltip
+// Show bell Tooltip on desktop / app link on mobile
   if (windowWidth <= 480) {
     $('.bell-link').attr('href', 'https://notifications.google.com/widget/mobile');
   } else {
@@ -24,7 +24,7 @@ $(document).ready(function() {
       console.log(showBoarder);
   })
 
-// Remove search bar outline when body is clicked
+// Remove search bar outline & tooltips when body is clicked
   $("body").mouseup(function(){
     $('.search').removeClass('search-border');
     $('.thToolTip').hide();
