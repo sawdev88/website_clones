@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Google Clone</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <ul>
-        <div class="top-menu-mobile pull-left">
-          <li><a class="selected-mobile" href="http://www.google.com/gmail">all</a></li>
-          <li><a href="http://www.google.com/images">Images</a></li>
-        </div>
-        <div class="top-menu pull-right">
-            <li class="top-menu-desktop"><a href="http://www.google.com/gmail">Gmail</a></li>
-            <li class="top-menu-desktop"><a href="http://www.google.com/images">Images</a></li>
-          <li><a href="#"><span class="th glyphicon glyphicon-th"></span></a></li>
-          <li><a class="bell-link" href="#"><span class="bell glyphicon glyphicon-bell"></span></a></li>
-          <li><a href="http://www.google.com"><img src="img/das_me.jpg" alt="Icon"></a></li>
-        </div>
-      </ul>
+        <ul>
+            <div class="top-menu-mobile pull-left">
+                <li><a class="selected-mobile" href="http://www.google.com/gmail">all</a></li>
+                <li><a href="http://www.google.com/images">Images</a></li>
+            </div>
+            <div class="top-menu pull-right">
+                <li class="top-menu-desktop"><a href="http://www.google.com/gmail">Gmail</a></li>
+                <li class="top-menu-desktop"><a href="http://www.google.com/images">Images</a></li>
+                <li><a href="#"><span class="th glyphicon glyphicon-th"></span></a></li>
+                <li><a class="bell-link" href="#"><span class="bell glyphicon glyphicon-bell"></span></a></li>
+                <li>
+                    <a href="http://www.google.com"><img src="img/das_me.jpg" alt="Icon"></a>
+                </li>
+            </div>
+        </ul>
     </header>
 
     <main>
-      <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
 
-      <div class="search">
-        <input class="search-input" type="text" name="searchBar" value="">
-        <img class ="search-img-mic" src="data:image/png;base64,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" alt="Google mic">
-        <div class="search-microscope">
-          <span class="glyphicon glyphicon-search"></span>
+        <div class="search">
+            <input class="search-input" type="text" name="searchBar" value="">
+            <img class="search-img-mic" src="data:image/png;base64,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"
+                alt="Google mic">
+            <div class="search-microscope">
+                <span class="glyphicon glyphicon-search"></span>
+            </div>
         </div>
-      </div>
-      <div class="search-buttons">
-        <button type="button" name="buttonSearch">Google Search</button>
-        <button type="button" name="buttonLuckey">I'm Feeling Lucky</button>
-      </div>
+        <div class="search-buttons">
+            <button type="button" name="buttonSearch">Google Search</button>
+            <button type="button" name="buttonLuckey">I'm Feeling Lucky</button>
+        </div>
     </main>
 
     <footer>
-      <div class="footer-location">
-        <p><div class="location-status-dot"></div> Location</p>
-      </div>
-      <div class="footer-right col-md-6">
-        <ul>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Settings</a></li>
-        </ul>
-      </div>
-      <div class="footer-left col-md-6">
-        <ul>
-          <li><a href="#">Advertising</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
+        <div class="footer-location">
+            <p>
+                <div class="location-status-dot"></div> Location</p>
+        </div>
+        <div class="footer-right col-md-6">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        <div class="footer-left col-md-6">
+            <ul>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
     </footer>
 
     <div class="thToolTip">
-      <img src="img/thToolTip.png" alt="google tooltip">
+        <img src="img/thToolTip.png" alt="google tooltip">
     </div>
     <div class="bellToolTip">
-      <img src="img/bellToolTip.png" alt="google tooltip" />
+        <img src="img/bellToolTip.png" alt="google tooltip" />
     </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/script.js" charset="utf-8"></script>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+
 </html>
