@@ -142,6 +142,10 @@ footer a {
   padding: 0 8px;
 }
 
+footer a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .footer-location {
   display: none;
 }
