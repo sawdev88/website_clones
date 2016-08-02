@@ -11,15 +11,14 @@ $(document).ready(function() {
     if (windowWidth <= 480) {
         $('.bell-link').attr('href', 'https://notifications.google.com/widget/mobile');
     } else {
-        $('.bell').on('click', function() {
-            $('.bellToolTip').show();
-        })
+      $('.bell').on('click', function() {
+          $('.bellToolTip').show();
+      })
     }
 
     // Show blue outline around search bar
     $('.search input').on('click', function() {
         $('.search').addClass('search-border');
-        console.log(showBoarder);
     })
 
     // Remove search bar outline & tooltips when body is clicked
